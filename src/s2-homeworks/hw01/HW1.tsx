@@ -53,10 +53,10 @@ export const friendMessage0: MessageType = {
 
 const HW1 = () => {
     return (
-        <div id={'hw1'}>
-            <div className={s2.hwTitle}>Hometask №1</div>
-            <div>
-                <hr className={s2.hwLine}/>
+        <div id={'hw1'} >
+
+            <div className={s2.header}>
+                <div className={s2.hwTitle}>Hometask №1</div>
             </div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
