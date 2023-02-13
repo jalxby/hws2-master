@@ -1,55 +1,89 @@
 .message {
+    /*background-color: #9eb7d5;*/
+    margin-left: auto;
+    margin-right: 70px;
     width: 575px;
     height: 77px;
-    background: #0066CC;
-    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    /*border-style: solid;*/
+    /*border-color: #ff8800;*/
+    font-family: 'Montserrat', sans-serif;
 
 }
 
 .imageAndText {
-
+    display: grid;
+    grid-template-areas: "tx im";
+    border-style: solid;
 }
 
 .imageAndText img {
+    bottom: 0;
+    grid-area: im;
     width: 48px;
     height: 48px;
+    margin-top: auto;
+    margin-bottom: 0;
+
 }
 
-/*.
-текст всего блока сообщения
-*/
-text {
-
+.text {
+    grid-area: tx;
+    width: 527px;
+    height: 60px;
+    background: #0066CC;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
 }
 
 .text:after {
+    background-color: #ff8800;
+    content: "dfsfsf";
+
+    /*border-left: 15px solid #bf002d;*/
+    /*border-right: 15px solid transparent;*/
+    /*border-top: 15px solid #8f00bf;*/
+    /*border-bottom: 15px solid transparent;*/
+    /*left: -16px;*/
 
 }
 
+
+
 .name {
-    width: 40px;
+    margin-left: auto;
+    margin-right: 25px;
+    width: fit-content;
     height: 22px;
+background-color: #ff8800;
+
+    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #dc1919;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
 }
 
 .messageText {
-    width: 489px;
-    height: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #dc1919;
+
 }
 
 .time {
+    margin-left: auto;
+    margin-right: 11px;
     width: 26px;
     height: 12px;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 10px;
     line-height: 12px;
+
     color: #000000;
+
 }

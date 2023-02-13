@@ -1,11 +1,11 @@
 .friendMessage {
     width: 462px;
     height: 77px;
-    background: #F5F7FB;
-    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    background-color: #ff8800;
 }
 
 .friendImageAndText {
+
 
 }
 
@@ -16,7 +16,6 @@
 
 .friendText {
 
-
 }
 
 .friendText:after {
@@ -24,28 +23,13 @@
 }
 
 .friendName {
-    width: 35px;
-    height: 20px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
+
 }
 
 .friendMessageText {
-    width: 374px;
-    height: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
+
 }
 
 .friendTime {
-    width: 29px;
-    height: 12px;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 12px;
-    color: #000000;
+
 }
