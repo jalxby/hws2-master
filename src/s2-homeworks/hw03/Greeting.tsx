@@ -27,7 +27,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
 
 
-    const inputClass = () => (error === "") ? s.input : s.errorInput
+    const inputClass = (error === "") ? s.input : s.errorInput
     // need to fix with (?:)
 
 
@@ -46,7 +46,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                         id={'hw3-input'}
                         value={name}
                         onChange={setNameCallback}
-                        className={inputClass()}
+                        className={inputClass}
                         onKeyDown={onEnter}
                         onBlur={onBlur}
                     />

@@ -1,11 +1,8 @@
 .message {
-    /*background-color: #9eb7d5;*/
     margin-left: auto;
     margin-right: 70px;
     width: 575px;
     height: 77px;
-    /*border-style: solid;*/
-    /*border-color: #ff8800;*/
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -13,11 +10,11 @@
 .imageAndText {
     display: grid;
     grid-template-areas: "tx im";
-    border-style: solid;
+
 }
 
 .imageAndText img {
-    bottom: 0;
+
     grid-area: im;
     width: 48px;
     height: 48px;
@@ -39,37 +36,34 @@
 }
 
 .text:after {
-    background-color: #ff8800;
-    content: "dfsfsf";
-
-    /*border-left: 15px solid #bf002d;*/
-    /*border-right: 15px solid transparent;*/
-    /*border-top: 15px solid #8f00bf;*/
-    /*border-bottom: 15px solid transparent;*/
-    /*left: -16px;*/
+    /*background-color: #ff8800;*/
+    /*content: "dfsfsf";*/
 
 }
-
 
 
 .name {
     margin-left: auto;
     margin-right: 25px;
-    width: fit-content;
+    width: 40px;
     height: 22px;
-background-color: #ff8800;
-
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
-
-
     color: #FFFFFF;
 }
 
 .messageText {
+    margin-left: auto;
+    margin-right: 25px;
+    width: 489px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
 
 }
 
@@ -83,7 +77,6 @@ background-color: #ff8800;
     font-weight: 600;
     font-size: 10px;
     line-height: 12px;
-
     color: #000000;
 
 }
