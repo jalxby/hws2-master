@@ -67,7 +67,6 @@ const HW14 = () => {
     return (
         <div id={'hw14'}>
             <div className={s2.hwTitle}>Homework #14</div>
-
             <div className={s2.hw}>
                 <SuperDebouncedInput
                     id={'hw14-super-debounced-input'}
@@ -75,11 +74,9 @@ const HW14 = () => {
                     onChangeText={onChangeText}
                     onDebouncedChange={sendQuery}
                 />
-
                 <div id={'hw14-loading'} className={s.loading}>
                     {isLoading ? '...ищем' : <br/>}
                 </div>
-
                 {mappedTechs}
             </div>
         </div>

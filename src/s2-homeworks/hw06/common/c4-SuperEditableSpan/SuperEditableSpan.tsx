@@ -1,9 +1,4 @@
-import React, {
-    DetailedHTMLProps,
-    InputHTMLAttributes,
-    HTMLAttributes,
-    useState,
-} from 'react'
+import React, {DetailedHTMLProps, HTMLAttributes, InputHTMLAttributes, useState,} from 'react'
 import s from './SuperEditableSpan.module.css'
 import SuperInputText from '../../../hw04/common/c1-SuperInputText/SuperInputText'
 import editIcon from './editIcon.svg'
@@ -23,7 +18,7 @@ type SuperEditableSpanType = Omit<DefaultInputPropsType, 'type'> & {
     onEnter?: () => void
     error?: string
 
-    spanProps?: DefaultSpanPropsType  & {defaultText?: string}// пропсы для спана
+    spanProps?: DefaultSpanPropsType & { defaultText?: string }// пропсы для спана
 }
 
 const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
@@ -84,7 +79,6 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                         {...restSpanProps}
                     >
                         {/*если нет захардкодженного текста для спана, то значение инпута*/}
-
                         {children || restProps.value || defaultText}
                     </span>
                 </div>

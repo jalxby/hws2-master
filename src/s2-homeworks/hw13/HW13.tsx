@@ -4,9 +4,6 @@ import s from './HW13.module.css'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import axios from 'axios'
 import success200 from './images/200.svg'
-import error400 from './images/400.svg'
-import error500 from './images/500.svg'
-import errorUnknown from './images/error.svg'
 
 /*
 * 1 - дописать функцию send
@@ -48,7 +45,6 @@ const HW13 = () => {
     return (
         <div id={'hw13'}>
             <div className={s2.hwTitle}>Homework #13</div>
-
             <div className={s2.hw}>
                 <div className={s.buttonsContainer}>
                     <SuperButton
@@ -56,7 +52,6 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
-
                     >
                         Send true
                     </SuperButton>
@@ -65,7 +60,6 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
-
                     >
                         Send false
                     </SuperButton>
@@ -74,7 +68,6 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
-
                     >
                         Send undefined
                     </SuperButton>
@@ -83,17 +76,14 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
-
                     >
                         Send null
                     </SuperButton>
                 </div>
-
                 <div className={s.responseContainer}>
                     <div className={s.imageContainer}>
                         {image && <img src={image} className={s.image} alt="status"/>}
                     </div>
-
                     <div className={s.textContainer}>
                         <div id={'hw13-code'} className={s.code}>
                             {code}

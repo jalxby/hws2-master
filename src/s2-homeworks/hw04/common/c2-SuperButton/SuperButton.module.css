@@ -8,12 +8,8 @@
     align-items: center;
     padding: 5px 24px;
     gap: 10px;
-
-
     width: 133px;
     height: 30px;
-
-
     background: #004D99;
     opacity: 0.5;
     border-radius: 3px;
@@ -21,21 +17,15 @@
 
 .secondary {
     box-sizing: border-box;
-
     /* Auto layout */
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 5px 24px;
     gap: 10px;
-
-
     width: 176px;
     height: 30px;
-
-
     border: 1px solid #0066CC;
     border-radius: 3px;
 }
@@ -49,7 +39,7 @@
     gap: 10px;
     width: 132px;
     height: 30px;
-  /* Primary/100 */
+    /* Primary/100 */
     background: #0066CC;
     border-radius: 3px;
 }
@@ -61,13 +51,9 @@
     align-items: center;
     padding: 5px 24px;
     gap: 10px;
-
     width: 129px;
     height: 30px;
-
-
     /* Danger/100 */
-
     background: #CC1439;
     border-radius: 3px;
 }
@@ -90,7 +76,6 @@
 
 .secondary:hover {
 }
-
 
 .default:active {
 }

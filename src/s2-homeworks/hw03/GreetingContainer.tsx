@@ -2,7 +2,6 @@ import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from './HW3'
 
-
 type GreetingContainerPropsType = {
     users: Array<UserType> // need to fix any
     addUserCallback: (name: string) => void // need to fix any
@@ -57,7 +56,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
 
     const totalUsers = users.length // need to fix
-    const lastUserName = (users.length === 0) ? "" : users[users.length-1].name // need to fix
+    const lastUserName = (users.length === 0) ? "" : users[users.length - 1].name // need to fix
 
     return (
         <Greeting

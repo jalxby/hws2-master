@@ -7,7 +7,6 @@ type FriendMessagePropsType = {
     message: MessageType
 }
 
-
 const FriendMessage = (props: FriendMessagePropsType) => {
     return (
         <div
@@ -18,7 +17,7 @@ const FriendMessage = (props: FriendMessagePropsType) => {
                 <img
                     id={'hw1-friend-avatar-' + props.message.id}
                     // создаёт студент
-                        src={props.message.user.avatar}
+                    src={props.message.user.avatar}
                     //
                 />
                 <div className={s.friendText}>
@@ -27,7 +26,6 @@ const FriendMessage = (props: FriendMessagePropsType) => {
                         className={s.friendName}
                     >
                         {props.message.user.name}
-
                         {/**/}
                     </div>
                     <pre
@@ -35,7 +33,6 @@ const FriendMessage = (props: FriendMessagePropsType) => {
                         className={s.friendMessageText}
                     >
                         {props.message.message.text}
-
                         {/**/}
                     </pre>
                 </div>
@@ -45,7 +42,6 @@ const FriendMessage = (props: FriendMessagePropsType) => {
                 className={s.friendTime}
             >
                 {props.message.message.time}
-
                 {/**/}
             </div>
         </div>

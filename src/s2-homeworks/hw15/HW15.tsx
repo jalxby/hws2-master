@@ -95,7 +95,6 @@ const HW15 = () => {
             <div id={'hw15-tech-' + t.id} className={s.tech}>
                 {t.tech}
             </div>
-
             <div id={'hw15-developer-' + t.id} className={s.developer}>
                 {t.developer}
             </div>
@@ -105,29 +104,24 @@ const HW15 = () => {
     return (
         <div id={'hw15'}>
             <div className={s2.hwTitle}>Homework #15</div>
-
             <div className={s2.hw}>
                 {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
-
                 <SuperPagination
                     page={page}
                     itemsCountForPage={count}
                     totalCount={totalCount}
                     onChange={onChangePagination}
                 />
-
                 <div className={s.rowHeader}>
                     <div className={s.techHeader}>
                         tech
                         <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
                     </div>
-
                     <div className={s.developerHeader}>
                         developer
                         <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
                     </div>
                 </div>
-
                 {mappedTechs}
             </div>
         </div>

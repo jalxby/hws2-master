@@ -17,23 +17,20 @@ const Message = (props: MessagePropsType) => {
                     // создаёт студент
                     src={props.message.user.avatar}
                     //
-                 alt={'userAvatar'}/>
+                    alt={'userAvatar'}/>
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {props.message.user.name}
-
                         {/**/}
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
                         {props.message.message.text}
-
                         {/**/}
                     </pre>
                 </div>
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
                 {props.message.message.time}
-
                 {/**/}
             </div>
         </div>

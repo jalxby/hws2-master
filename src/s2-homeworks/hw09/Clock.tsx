@@ -47,7 +47,6 @@ function Clock() {
                     <strong>{stringTime}</strong>
                 </span>
             </div>
-
             <div id={'hw9-more'}>
                 <div className={s.more}>
                     {show ? (
@@ -62,7 +61,6 @@ function Clock() {
                     )}
                 </div>
             </div>
-
             <div className={s.buttonsContainer}>
                 <SuperButton
                     id={'hw9-button-start'}
