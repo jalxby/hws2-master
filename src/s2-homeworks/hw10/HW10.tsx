@@ -16,7 +16,7 @@ import {loadingAC, LoadingActionType} from "./bll/loadingReducer";
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
 
-    const isLoading = useSelector<AppStoreType>(state => state.loading.isLoading)
+    const isLoading = useSelector<AppStoreType,boolean>(state => state.loading.isLoading)
     const dispatch: Dispatch<LoadingActionType> = useDispatch()
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
@@ -24,7 +24,7 @@ const HW10 = () => {
 
         // setTimeout
         setTimeout(() => {
-            dispatch(loadingAC(!isLoading))
+            dispatch(loadingAC(isLoading))
         }, 1500)
     }
 
