@@ -47,8 +47,6 @@ function HW11() {
                             // сделать так чтоб value1/2 изменялось // пишет студент
                             onChange={change}
                             value={[value1, value2]}
-                            disableSwap
-
                         />
                         <span id={'hw11-value-2'} className={s.number}>{value2}</span>
                     </div>
