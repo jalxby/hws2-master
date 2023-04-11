@@ -48,6 +48,7 @@ function HW11() {
                             onChange={change}
                             value={[value1, value2]}
                             disableSwap
+
                         />
                         <span id={'hw11-value-2'} className={s.number}>{value2}</span>
                     </div>

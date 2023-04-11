@@ -5,4 +5,5 @@
 }
 
 .number {
+    pointer-events: auto;
 }
