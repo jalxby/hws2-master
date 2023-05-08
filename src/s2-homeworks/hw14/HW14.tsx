@@ -49,12 +49,14 @@ const HW14 = () => {
         // делает студент
 
         // добавить/заменить значение в квери урла
-       // setSearchParams({find: value})
+       setSearchParams({find: value})
 
         //
     }
 
     useEffect(() => {
+        console.log(searchParams)
+
         const params = Object.fromEntries(searchParams)
         sendQuery(params.find || '')
         setFind(params.find || '')
